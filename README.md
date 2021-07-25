@@ -1,1 +1,1 @@
-https://maximzuyzko.github.io/rsschool-cv/cv
+https://maximzuyzko.github.io/rsschool-cv/
