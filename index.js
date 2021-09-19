@@ -18,3 +18,5 @@ function toggleActive(e) {
 projects.forEach(project => project.addEventListener('mouseenter', addOpen));
 projects.forEach(project => project.addEventListener('mouseleave', removeOpen));
 projects.forEach(project => project.addEventListener('transitionend', toggleActive));
+
+hljs.initHighlightingOnLoad();

@@ -7,6 +7,7 @@
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/stackoverflow-light.min.css">
         <title>CV</title>
     </head>
 
@@ -161,12 +162,18 @@
 
                 <article class="code">
                     <h2 class="code__title title">Code example</h2>
-                    <a class="code__link" href="https://www.codewars.com/kata/54e6533c92449cc251001667">Task</a>
+                    <a class="code__link link" href="https://www.codewars.com/kata/57ef016a7b45ef647a00002d">Task</a>
                     <pre class="code__text">
-                        <code>
-                var uniqueInOrder=function(iterable){
-                  return [...iterable].filter((a, i) => a !== iterable[i-1])
-                }
+                        <code class="javascript">
+                let filterHomogenous = function (a) {
+                    return a.filter(function (b) {
+                        if(b.length > 0) {
+                            return b.every(function (e) {
+                                return typeof e === typeof b[0];
+                            });
+                        }
+                    });
+                };
                         </code>
                     </pre>
                 </article>
@@ -187,6 +194,7 @@
             </footer>
         </div>
 
+    <script src="highlight.min.js"></script>
     <script src="index.js"></script>
     </body>
 </html>
